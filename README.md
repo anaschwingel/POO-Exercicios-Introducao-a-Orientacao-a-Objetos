@@ -6,14 +6,14 @@ O que é um objeto?
 É uma coisa,entidade que possua identidade.
 
 #### **2 Problema**
-Identifique 3 caracter´ısticas e 3 comportamentos de um carro.
+Identifique 3 características e 3 comportamentos de um carro.
 
 Carro
 Características: Modelo, ano, cor.
 Comportamentos: Ligado, desligado, andando.
 
 #### **3 Problema**
-No contexto de Orienta¸c˜ao a Objetos, as caracter´ısticas e comportamentos s˜ao
+No contexto de Orientação a Objetos, as características e comportamentos são
 chamados respectivamente de?
 
 
@@ -22,7 +22,7 @@ chamados respectivamente de?
 Qual é o objetivo da programação orientada à objetos?
 
 #### **5 Problema**
-O que é abstração Cite um exemplo.
+O que é abstração. Cite um exemplo.
 
 #### **6 Problema**
 O que é classe?
