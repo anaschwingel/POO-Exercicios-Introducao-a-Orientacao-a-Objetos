@@ -16,19 +16,28 @@ Comportamentos: Ligado, desligado, andando.
 No contexto de Orientação a Objetos, as características e comportamentos são
 chamados respectivamente de?
 
+Atributos e métodos.
 
 
 #### **4 Problema**
 Qual é o objetivo da programação orientada à objetos?
 
+Tem o objetivo de desenvolver softwares utilizando objetos de maneira cooperativa, através de troca de mensagens.
+
 #### **5 Problema**
 O que é abstração. Cite um exemplo.
+
+É poder pensar em uma identidade e ela poder ser única para todos os objetos. 
 
 #### **6 Problema**
 O que é classe?
 
+É a descrição de um conjunto de objetos compartilha. Define os atributos e métodos que o objeto deverá possuir.
+
 #### **7 Problema**
 Qual é o padrão utilizado para nomear as classes? Cite um exemplo.
+
+
 
 #### **8 Problema**
 Qual opção apresenta corretamente o nome da classe carro elétrico ?
@@ -39,7 +48,7 @@ Qual opção apresenta corretamente o nome da classe carro elétrico ?
 4. CarroEletrico
 5. carro eletrico
 
-opção correta: 2. carroEletrico
+opção correta: 
 
 #### **9 Problema**
 Qual é o padrão utilizado para nomear os atributos? Cite um exemplo.
@@ -53,7 +62,7 @@ Qual opção apresenta corretamente o nome do atributo cor de fundo?
 3. corDeFundo
 4. cor de fundo
 5. corDeFundo
-6. mCorDeFundo
+6. CorDeFundo
 
 #### **11 Problema**
 Qual é o padrão utilizado para nomear os métodos? Cite um exemplo.
@@ -73,22 +82,30 @@ Qual opção apresenta corretamente o nome do método está vazio ?
 No contexto de orientação à objetos, o que é um objeto? Em que momento
 existe um objeto? Quando ele deixa de existir?
 
+A partir que se instância esse objeto.
+
 #### **14 Problema**
 Qual é o objetivo do operador new?
 
-O operador new cria uma instância de um tipo de objeto, definido pelo usuário.
+Ele cria um objeto a partir de uma classe.
 
 #### **15 Problema**
 O que é o construtor? Qual é o seu objetivo? Qual deve ser o seu nome? Cite
 um exemplo.
 
+É um método especial para a instanciação de objetos, iniciar variáveis, instanciar outros objetos
+necessários, disparar métodos de inicialização.
 
 #### **16 Problema**
 Caso o construtor da classe Aluno não for declarado, qual será o seu construtor?
 
+Ele utilizará o padrão java (default).
+
+
 #### **17 Problema**
 Crie um exemplo de instanciação da classe Aluno. Utilize o construtor padrão.
 
+    Aluno var = new Aluno();
 
 #### **18 Problema**
 O que é encapsulamento?
@@ -113,6 +130,8 @@ Qual o objetivo dos métodos setters? Crie um exemplo.
 
 #### **24 Problema**
 O diagrama de classe UML é composto por 3 partes. O que vai em cada parte?
+
+Na primeira parte vai o nome da classe, na segunda parte os atributos e na terceira os métodos. 
 
 #### **25 Problema**
 Qual é o padrão utilizado para representar um atributo no diagrama de classe
@@ -196,7 +215,7 @@ public class Dog{
 }
 
 #### **35 Problema**
-Qual é o estado do objeto dog no final da execu¸c˜ao do m´etodo main? Desenvolva
+Qual é o estado do objeto dog no final da execução do método main? Desenvolva
 o diagrama de objetos.
 
 public static void main(String args[]){
@@ -207,7 +226,7 @@ public static void main(String args[]){
 }
 
 #### **36 Problema**
-Qual ´e o estado do objeto pug e buldog ap´os a execu¸c˜ao da linha 6? Desenvolva
+Qual ´é o estado do objeto pug e buldog após a execução da linha 6? Desenvolva
 o diagrama de objetos.
 
 Dog pug = new Dog();
@@ -221,7 +240,7 @@ pug.setYears(1);
 
 #### **37 Problema**
 Analise o código abaixo. Verifique se existem problemas, caso sim, indique o
-problema e sugere as correções.
+problema e sugira as correções.
 
 1: public class Cat{
 2: private String name;
