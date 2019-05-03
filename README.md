@@ -167,36 +167,36 @@ UML abaixo:
 #### **32 Problema**
 Desenvolva o diagrama de classe dos codigos Java abaixo.
 
-public class Livro{
-  private String nome;
-  public String getNome(){
-  return nome;
-  }
-  public void setNome(String nome){
-  this.nome = nome;
-  }
-}
+    public class Livro{
+        private String nome;
+        public String getNome(){
+        return nome;
+        }
+        public void setNome(String nome){
+        this.nome = nome;
+        }
+    }
 
-public class ContaCorrente{
-  private double saldo;
-  public double sacar(double valor){
-  return 0.0;
-  }
-  public void depositar(double valor){
-    this.saldo = saldo;
-  }
-  private void recalcularSaldo(){
-  }
-}
+    public class ContaCorrente{
+        private double saldo;
+        public double sacar(double valor){
+        return 0.0;
+        }
+        public void depositar(double valor){
+        this.saldo = saldo;
+        }
+        private void recalcularSaldo(){
+        }
+        }
 
-public class Par{
-  public String chave;
-  public String valor;
-  }
-public class Impressora{
-  public void imprimir(Documento documento){
-  }
-}
+       public class Par{
+        public String chave;
+        public String valor;
+        }
+        public class Impressora{
+            public void imprimir(Documento documento){
+            }
+        }
 
 #### **33 Problema**
 O que e o estado de um objeto? Cite um exemplo com a classe Aluno com
@@ -204,53 +204,53 @@ os atributos nome, idade, matricula e curso. Utilize o diagrama de estado de
 objeto
 
 #### **34 Problema**
-Qual ´e o estado do objeto da classe Dog quando ´e inicializado? Desenvolva o
+Qual é o estado do objeto da classe Dog quando é inicializado? Desenvolva o
 diagrama de objetos.
 
-public class Dog{
-  private int years;
-  private String name;
-  private boolean alive;
-  //Getters e setters suprimido
-}
+    public class Dog{
+        private int years;
+        private String name;
+        private boolean alive;
+        //Getters e setters suprimido
+    }
 
 #### **35 Problema**
 Qual é o estado do objeto dog no final da execução do método main? Desenvolva
 o diagrama de objetos.
 
-public static void main(String args[]){
-  Dog dog = new Dog();
-  dog.setYears(10);
-  dog.setName("Spike");
-  dog.setAlive(true);
-}
+        public static void main(String args[]){
+            Dog dog = new Dog();
+            dog.setYears(10);
+            dog.setName("Spike");
+            dog.setAlive(true);
+        }
 
 #### **36 Problema**
-Qual ´é o estado do objeto pug e buldog após a execução da linha 6? Desenvolva
+Qual é o estado do objeto pug e buldog após a execução da linha 6? Desenvolva
 o diagrama de objetos.
 
-Dog pug = new Dog();
-Dog buldog = new Dog();
-pug.setName("Spoke")
-buldog.setName("Spike");
-pug.setAlive(true);
-pug.setYears(2);
-buldog.setName("Floquinho");
-pug.setYears(1);
+    Dog pug = new Dog();
+    Dog buldog = new Dog();
+    pug.setName("Spoke")
+    buldog.setName("Spike");
+    pug.setAlive(true);
+    pug.setYears(2);
+    buldog.setName("Floquinho");
+    pug.setYears(1);
 
 #### **37 Problema**
 Analise o código abaixo. Verifique se existem problemas, caso sim, indique o
 problema e sugira as correções.
 
-1: public class Cat{
-2: private String name;
-3: public double weight;
-4: // Getters e Setters suprimidos
-5:}
-6:public class Main{
-7: public static void main(String args[]){
-8: Cat c = new Cat();
-9: c.weight = 3.5;
-10: c.name = "BlackCat";
-11: }
-12:}
+    1: public class Cat{
+    2: private String name;
+    3: public double weight;
+    4: // Getters e Setters suprimidos
+    5:}
+    6:public class Main{
+    7: public static void main(String args[]){
+    8: Cat c = new Cat();
+    9: c.weight = 3.5;
+    10: c.name = "BlackCat";
+    11: }
+    12:}
