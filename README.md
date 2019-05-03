@@ -37,7 +37,10 @@ O que é classe?
 #### **7 Problema**
 Qual é o padrão utilizado para nomear as classes? Cite um exemplo.
 
+O padrão é CamelCase e a primira letra é maíscula.
 
+     Classe 
+    
 
 #### **8 Problema**
 Qual opção apresenta corretamente o nome da classe carro elétrico ?
@@ -48,10 +51,12 @@ Qual opção apresenta corretamente o nome da classe carro elétrico ?
 4. CarroEletrico
 5. carro eletrico
 
-opção correta: 
+opção correta: 4. CarroEletrico
 
 #### **9 Problema**
 Qual é o padrão utilizado para nomear os atributos? Cite um exemplo.
+
+    
 
 
 #### **10 Problema**
@@ -63,6 +68,8 @@ Qual opção apresenta corretamente o nome do atributo cor de fundo?
 4. cor de fundo
 5. corDeFundo
 6. CorDeFundo
+
+opção correta: 5. corDeFundo
 
 #### **11 Problema**
 Qual é o padrão utilizado para nomear os métodos? Cite um exemplo.
