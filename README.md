@@ -172,14 +172,16 @@ diferenciado criando um esteriótipo
 Quais são os símmbolos utilizados no diagrama de classe UML para representar
 os modificadores de acessos ao atributos e métodos? Crie um exemplo.
 
-+
--
-#
+     +
+     -
+     #
 
 
 #### **29 Problema**
 Considere a classe Cliente, com os atributos nome, email e telefone com os
 respectivos métodos getters e setters. Desenvolva o diagrama de classe UML
+
+
 
 #### **30 Problema**
 Considere a classe Cliente apresentado no Problema 29, e desenvolva o código
