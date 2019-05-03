@@ -56,8 +56,9 @@ opção correta: 4. CarroEletrico
 #### **9 Problema**
 Qual é o padrão utilizado para nomear os atributos? Cite um exemplo.
 
-    
+O padrão utilizado é CamelCase e a primeira letra é minúscula.
 
+     atributoNovo
 
 #### **10 Problema**
 Qual opção apresenta corretamente o nome do atributo cor de fundo?
@@ -74,16 +75,20 @@ opção correta: 5. corDeFundo
 #### **11 Problema**
 Qual é o padrão utilizado para nomear os métodos? Cite um exemplo.
 
+O padrão é CamelCase e a primeira letra é minúscula.
+
+     metodoNovo
 
 #### **12 Problema**
 Qual opção apresenta corretamente o nome do método está vazio ?
 
 1. estaVazio
-2. estaVazio
-3. estavazio
-4. EstaVazio
-5. Estavazio
-6. Esta vazio
+2. estavazio
+3. EstaVazio
+4. Estavazio
+5. Esta vazio
+
+opção correta: 1. estaVazio
 
 #### **13 Problema**
 No contexto de orientação à objetos, o que é um objeto? Em que momento
@@ -144,17 +149,33 @@ Na primeira parte vai o nome da classe, na segunda parte os atributos e na terce
 Qual é o padrão utilizado para representar um atributo no diagrama de classe
 UML? Crie um exemplo
 
+O padrão é o modificador, nome do atributo e tipo do atributo.
+
+     + peso: int
+
+
 #### **26 Problema**
 Qual é o padrão utilizado para representar um método no diagrama de classe
 UML? Crie um exemplo.
+
+O padrão é o modificador, nome do método, parâmetro, tipo do método.
 
 #### **27 Problema**
 Como o construtor de uma classe pode ser diferenciado no diagrama de classe
 UML? Crie um exemplo.
 
+diferenciado criando um esteriótipo
+
+     <<create>> Cachorro()
+
 #### **28 Problema**
 Quais são os símmbolos utilizados no diagrama de classe UML para representar
 os modificadores de acessos ao atributos e métodos? Crie um exemplo.
+
++
+-
+#
+
 
 #### **29 Problema**
 Considere a classe Cliente, com os atributos nome, email e telefone com os
