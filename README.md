@@ -142,7 +142,6 @@ com o atributo matrícula.
      public class Aluno{
 	     private String matricula;
           
-          public
      }    
 
 #### **22 Problema**
