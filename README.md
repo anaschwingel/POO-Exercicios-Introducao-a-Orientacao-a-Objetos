@@ -122,23 +122,53 @@ Crie um exemplo de instanciação da classe Aluno. Utilize o construtor padrão.
 #### **18 Problema**
 O que é encapsulamento?
 
+É a técnica de faz com que os detalhes internos de um funcionamento dos métodos de uma classe permaneçam ocultos para os objetos.
+Utila-ze modificadores de acesso para privar os atributos do acesso direto e implementa-se métodos públicos que acessam e alternam os atributos.
 
 #### **19 Problema**
 Qual é o objetivo do modificador de acessso public?
 
+Qualquer classe pode ter acesso.
+
 #### **20 Problema**
 Qual é o objetivo do modificador de acessso private?
+
+Apenas os métodos da própria classe pode manipular o atributo
 
 #### **21 Problema**
 Como é aplicado o encapsulamento em uma classe? Considere a classe Aluno
 com o atributo matrícula.
 
+     public class Aluno{
+	     private String matricula;
+          
+          public
+     }    
+
 #### **22 Problema**
 Qual o objetivo dos métodos getters? Crie um exemplo.
 
+Ele é utilizado para obter informações de classes que são definidas como private.
+Esse tipo de método sempre retorna um valor.
+
+      public class Aluno{
+	     private String matricula;
+      }
+          public void getMatricula() {
+          }
 
 #### **23 Problema**
 Qual o objetivo dos métodos setters? Crie um exemplo.
+
+Ele é utilizado para definir valores de classes que são definidas como private.
+Esse tipo de método geralmente não retorna valores.
+
+    public class Aluno{
+	     private String matricula;
+          
+          public void setMatricula(String matricula){
+          }
+     }
 
 #### **24 Problema**
 O diagrama de classe UML é composto por 3 partes. O que vai em cada parte?
@@ -172,20 +202,68 @@ diferenciado criando um esteriótipo
 Quais são os símmbolos utilizados no diagrama de classe UML para representar
 os modificadores de acessos ao atributos e métodos? Crie um exemplo.
 
-     +
-     -
-     #
+     + público
+     - privado
+     # protegigo
+     
+     |-----------------------|
+     |      Cachorro         |                                                                          
+     |-----------------------|
+     | + raça: String        |
+     |-----------------------|
+     | + latir():void        |
+     |-----------------------|
 
 
 #### **29 Problema**
 Considere a classe Cliente, com os atributos nome, email e telefone com os
 respectivos métodos getters e setters. Desenvolva o diagrama de classe UML
 
+     |---------------------------------------------|
+     |                  Cliente                    |                                                                          
+     |---------------------------------------------|
+     | -nome: String                               |
+     | -email: String                              |
+     | -telefone: String                           |
+     |---------------------------------------------|
+     | + getNome():void                            |
+     | +setNome(nome:String):String                |
+     | +getEmail():void                            |
+     | +setEmail(email:String):String              |
+     | +getTelefone():void                         |                 
+     | +setTelefone(telefone:String):String        |
+     |---------------------------------------------|
 
 
 #### **30 Problema**
 Considere a classe Cliente apresentado no Problema 29, e desenvolva o código
 Java correspondente.
+
+     public class Cliente{
+          private String nome;
+          private String email;
+          private String telefone;
+          
+          public String getNome(){
+          return nome;
+          }
+          public String getEmail(){
+          return email;
+          }
+          public String getTelefone(){
+          return telefone;
+          }
+          
+          public void setNome(String nome){
+          this.nome = nome;
+          }
+          public void setEmail(String email){
+          this.email = email;
+          }
+          public void setTelefone(String telefone){
+          this.telefone = telefone;
+          }
+     }
 
 
 #### **31 Problema**
@@ -217,7 +295,7 @@ Desenvolva o diagrama de classe dos codigos Java abaixo.
         }
         private void recalcularSaldo(){
         }
-        }
+     }
 
        public class Par{
         public String chave;
@@ -227,6 +305,38 @@ Desenvolva o diagrama de classe dos codigos Java abaixo.
             public void imprimir(Documento documento){
             }
         }
+        
+        
+     |---------------------------------------------| 
+     |                  Livro                      |                                                                          
+     |---------------------------------------------|
+     | -nome: String                               |
+     |---------------------------------------------|
+     | + getNome():void                            |
+     | +setNome(nome:String):String                |
+     |---------------------------------------------|
+     
+     
+     |---------------------------------------------|
+     |              ContaCorrente                  |                                                                          
+     |---------------------------------------------|
+     | - saldo: double                             |
+     |---------------------------------------------|
+     | + setSacar(sacar:double):double             |
+     | + setDepositar(depoisitar:double):double    |
+     | - getRecalcularSaldo():void                 |
+     |---------------------------------------------|
+        
+     |---------------------------------------------|
+     |              ContaCorrente                  |                                                                          
+     |---------------------------------------------|
+     | - saldo: double                             |
+     |---------------------------------------------|
+     | + setSacar(sacar:double):double             |
+     | + setDepositar(depoisitar:double):double    |
+     | - getRecalcularSaldo():void                 |
+     |---------------------------------------------|
+           
 
 #### **33 Problema**
 O que e o estado de um objeto? Cite um exemplo com a classe Aluno com
