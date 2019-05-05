@@ -225,11 +225,11 @@ respectivos métodos getters e setters. Desenvolva o diagrama de classe UML
      | -email: String                              |
      | -telefone: String                           |
      |---------------------------------------------|
-     | + getNome(): String                            |
+     | + getNome(): String                         |
      | +setNome(nome:String):String                |
-     | +getEmail(): String                           |
+     | +getEmail(): String                         |
      | +setEmail(email:String):String              |
-     | +getTelefone(): String                        |                 
+     | +getTelefone(): String                      |                 
      | +setTelefone(telefone:String):String        |
      |---------------------------------------------|
 
@@ -462,7 +462,6 @@ o diagrama de objetos.
      | + setYears(years: Int): 2
      |---------------------------------------------|
                           |
-			  |
      |---------------------------------------------|
      |                    Pug                      |                                                                          
      |---------------------------------------------|
@@ -487,7 +486,6 @@ o diagrama de objetos.
      | + setName(name:String): Spike               |
      |---------------------------------------------|
                           |
-			  |
      |---------------------------------------------|
      |                    Buldog                   |                                                                          
      |---------------------------------------------|
