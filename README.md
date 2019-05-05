@@ -211,7 +211,7 @@ os modificadores de acessos ao atributos e métodos? Crie um exemplo.
      |-----------------------|
      | + raça: String        |
      |-----------------------|
-     | + latir():void        |
+     | + latir():true        |
      |-----------------------|
 
 
@@ -226,11 +226,11 @@ respectivos métodos getters e setters. Desenvolva o diagrama de classe UML
      | -email: String                              |
      | -telefone: String                           |
      |---------------------------------------------|
-     | + getNome():void                            |
+     | + getNome(): String                            |
      | +setNome(nome:String):String                |
-     | +getEmail():void                            |
+     | +getEmail(): String                           |
      | +setEmail(email:String):String              |
-     | +getTelefone():void                         |                 
+     | +getTelefone(): String                        |                 
      | +setTelefone(telefone:String):String        |
      |---------------------------------------------|
 
@@ -270,7 +270,40 @@ Java correspondente.
 Desenvolva o código java das classes do apresentadas no diagrama de classes
 UML abaixo:
 
-
+        public class Produto{
+          private String nome;
+          
+          public String getNome(){
+          return nome;
+          }
+          
+          public void setNome(String nome){
+          this.nome = nome;
+          }
+     }
+     
+     
+     public class Password{
+          private String value;
+          
+          public String password(value){
+          }
+          
+          public void isEqual(boolean password){
+          password p = value;
+          }
+     }
+     
+     public class Animal{
+          private String alive;
+          
+          public boolean isAlive(){
+          }
+          
+          public void die(boolean alive){
+          }
+     }
+     
 
 #### **32 Problema**
 Desenvolva o diagrama de classe dos codigos Java abaixo.
@@ -301,6 +334,8 @@ Desenvolva o diagrama de classe dos codigos Java abaixo.
         public String chave;
         public String valor;
         }
+	
+	
         public class Impressora{
             public void imprimir(Documento documento){
             }
@@ -328,13 +363,18 @@ Desenvolva o diagrama de classe dos codigos Java abaixo.
      |---------------------------------------------|
         
      |---------------------------------------------|
-     |              ContaCorrente                  |                                                                          
+     |                    Par                      |                                                                          
      |---------------------------------------------|
-     | - saldo: double                             |
+     | + cheve: String                             |
+     | + valor: String                             |
      |---------------------------------------------|
-     | + setSacar(sacar:double):double             |
-     | + setDepositar(depoisitar:double):double    |
-     | - getRecalcularSaldo():void                 |
+     |---------------------------------------------|
+     
+     |---------------------------------------------|
+     |                Impressora                   |                                                                          
+     |---------------------------------------------|
+     |---------------------------------------------|
+     | +getImprimir():Void                         |
      |---------------------------------------------|
            
 
@@ -342,6 +382,9 @@ Desenvolva o diagrama de classe dos codigos Java abaixo.
 O que e o estado de um objeto? Cite um exemplo com a classe Aluno com
 os atributos nome, idade, matricula e curso. Utilize o diagrama de estado de
 objeto
+
+É o momento em que os atributos são definidos para um objeto, ou seja, instanciados. Portanto, se o atributo do objeto mudar, o estado também irá mudar.
+
 
 #### **34 Problema**
 Qual é o estado do objeto da classe Dog quando é inicializado? Desenvolva o
@@ -354,16 +397,44 @@ diagrama de objetos.
         //Getters e setters suprimido
     }
 
+     |---------------------------------------------|
+     |                    Dog                      |                                                                          
+     |---------------------------------------------|
+     | - years: Int =0                             |
+     | - name: String = null                       |
+     | - alive(): boolean = false                  |
+     |---------------------------------------------|
+     |---------------------------------------------|
+
+
+O objeto ao ser inicializado, não foi definido valores para os atributos e os métodos. Portanto, o estado do objeto `dog` é: `0`,`null` e `false`.
+
 #### **35 Problema**
 Qual é o estado do objeto dog no final da execução do método main? Desenvolva
 o diagrama de objetos.
 
         public static void main(String args[]){
-            Dog dog = new Dog();
+            dog = newDog();
             dog.setYears(10);
             dog.setName("Spike");
             dog.setAlive(true);
         }
+	
+	
+     |---------------------------------------------|
+     |                    Dog                      |                                                                          
+     |---------------------------------------------|
+     | - years: Double                             |
+     | - name: String                              |
+     | - alive(): boolean                          |
+     |---------------------------------------------|
+     | <<create>> Dog()                            |
+     | + setYears(years: Double):10                |
+     | + setName(name:String):Spike                |
+     | + setAlive(alive:boolean):true              |
+     |---------------------------------------------|
+    
+O estado do objeto `Dog` é: `10`,`Spike`, `true`.
 
 #### **36 Problema**
 Qual é o estado do objeto pug e buldog após a execução da linha 6? Desenvolva
@@ -377,6 +448,62 @@ o diagrama de objetos.
     pug.setYears(2);
     buldog.setName("Floquinho");
     pug.setYears(1);
+    
+    
+     |---------------------------------------------|
+     |                    Pug                      |                                                                          
+     |---------------------------------------------|
+     |- name: String                               |
+     |- alive: boolean                             |
+     |- years: Int                                 |
+     |---------------------------------------------|
+     | <<create>> Dog()                            |
+     | + setName(name: String): Spoke              |
+     | + setAlive(alive:boolean): true             |
+     | + setYears(years: Int): 2
+     |---------------------------------------------|
+                          |
+			  |
+     |---------------------------------------------|
+     |                    Pug                      |                                                                          
+     |---------------------------------------------|
+     |- name: String                               |
+     |- alive: boolean                             |
+     |- years: Int                                 |
+     |---------------------------------------------|
+     | + setYears(years:Int): 1                    |
+     |---------------------------------------------|
+     
+     
+     
+     
+     |---------------------------------------------|
+     |                   Buldog                    |                                                                          
+     |---------------------------------------------|
+     |- name: String                               |
+     |- alive: boolean                             |
+     |- years: Int                                 |
+     |---------------------------------------------|
+     | <<create>> Dog()                            |
+     | + setName(name:String): Spike               |
+     |---------------------------------------------|
+                          |
+			  |
+     |---------------------------------------------|
+     |                    Buldog                   |                                                                          
+     |---------------------------------------------|
+     |- name: String                               |
+     |- alive: boolean                             |
+     |- years: Int                                 |
+     |---------------------------------------------|
+     | + setName(name:String):Floquinho            |
+     |---------------------------------------------|
+     
+
+O estado do objeto `Pug`após executada a linha 6 é: `Spoke`,`true`, `2`.
+O estado do objeto `Buldog`após executada a linha 6 é: `Spike`.
+
+
 
 #### **37 Problema**
 Analise o código abaixo. Verifique se existem problemas, caso sim, indique o
@@ -394,3 +521,6 @@ problema e sugira as correções.
     10: c.name = "BlackCat";
     11: }
     12:}
+    
+  
+erros: mudar o modificador de acesso do atributo `weigth` de `public` para `private`
